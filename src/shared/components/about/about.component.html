@@ -1,0 +1,29 @@
+<article id="about" class="container">
+    <h2>About Me</h2>
+    <p> <b>Hi! :)</b> My name is <b>Débora Tayná</b>, I’m 26 years old and I hold a  <span>Bachelor’s
+        degree in Information Technology</span> from UFRN. I’m currently also pursuing
+        a <span>degree in Computer Science</span> at UFRN.
+        During my academic journey, I worked as a <b>teaching assistant for Mathematical 
+        Foundations of Computer Science</b> at UFRN
+        and as a <b>technical support intern</b> at ESIG and SEEC. Later, I started working 
+        as a <span>front-end web developer</span>, contributing to projects developed 
+        in partnership with JFRN.
+        Outside of work, I enjoy <b>indie game development</b>, <b>mathematics</b>, <b>testing</b>, 
+        and creating interactive experiences. I like experimenting with ideas, 
+        solving problems, and building creative projects.
+    </p>
+    <div class="row">
+        <div class="education"> 
+            <h3> Education </h3> 
+            @for (edu of education; track $index) {
+            <app-education [info]='edu'></app-education>
+            }
+        </div>
+        <div class="experiences"> 
+            <h3> Experiences</h3> 
+            @for (exp of experiences; track $index) {
+            <app-experience [info]='exp'></app-experience>
+            }
+        </div>
+    </div>
+</article>

@@ -1,0 +1,29 @@
+@use '../../../../styles/variables.scss' as *;
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    padding: 1vh 2vh;
+    border-radius: 10px;
+    background-color: $dark-block-bg-hover;
+
+    .title{
+        flex: 1;
+        text-align: left;
+        
+        b {
+            font-weight: 400;
+        }
+    }
+    
+    .time{
+        text-align: right;
+        background-color: $dark-block-bg-hover-2;
+        text-align: center;
+        vertical-align: middle;
+        padding: 1em;
+        border-radius: 10px;
+    }
+}

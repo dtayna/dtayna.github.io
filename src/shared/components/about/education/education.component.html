@@ -1,0 +1,11 @@
+
+<div class="container">
+    <p> <b> {{info().title}} </b>
+    ({{ info().startYear }} – {{ info().endYear }})
+    <span class=progress>{{info().progress}}%  </span> 
+    </p>
+    <div class="progress-bar">
+        <div class="progress" [style.width.%]="info().progress">
+        </div>
+    </div>
+</div>

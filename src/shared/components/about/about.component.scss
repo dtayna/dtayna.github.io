@@ -1,0 +1,62 @@
+@use '../../../styles/variables.scss' as *;
+
+$width : 84%;
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    background-color: $dark-block-bg;
+    color: $dark-block-color;
+    padding-top: $nav-height;
+
+    h2 {
+        font-size: 1.5em;
+        max-width: 50%;
+        ;
+    }
+
+    p{
+        text-align: justify;
+        width: $width;
+    }
+
+    b{
+        font-weight: 500;
+    }
+
+    span{
+        color: $dark-block-secondary-color;
+    }
+
+}
+
+.row {
+    margin-top: 3vh;
+    width: $width;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    padding-top: 1vh;
+    margin-bottom: 5%;
+
+    
+
+    .experiences{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    .education{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+}

@@ -1,0 +1,51 @@
+@use '../../../../styles/variables.scss' as *;
+@use 'sass:color';
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 3vh 2vh;
+    border-radius: 10px;
+    background-color: $dark-block-bg-hover;
+
+    .title{
+        flex: 1;
+        text-align: left;
+        
+        b {
+            font-weight: 400;
+        }
+    }
+    
+    .time{
+        text-align: right;
+        background-color: $dark-block-bg-hover-2;
+        text-align: center;
+        vertical-align: middle;
+        padding: 1em;
+        border-radius: 10px;
+    }
+}
+
+
+.progress-bar{
+    margin-left: 5%;
+    width: 90%;
+    height: 12px;
+    background-color: color.scale($dark-block-bg, $lightness: 15%);
+    border-radius: 5px;
+    margin-top: 0.5vh;
+
+    .progress{
+        height: 100%;
+        background-color: $progress-color;
+        border-radius: 5px;
+    }
+}
+
+.progress{
+    color: $third-color;
+    font-weight: 400;
+}
