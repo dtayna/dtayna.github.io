@@ -1,0 +1,5 @@
+<nav class='container'>
+    @for (item of navItems; track $index)  {
+        <app-menu-item [info]='item'></app-menu-item>
+    }
+</nav>

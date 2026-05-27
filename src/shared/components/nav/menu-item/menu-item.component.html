@@ -1,0 +1,14 @@
+<a
+  class="container item"
+  [href]="info().url || '#' + info().sectionId"
+  [attr.target]="info().url ? '_blank' : null"
+  [attr.rel]="info().url ? 'noopener noreferrer' : null"
+>
+
+  @if (info().icon) {
+    <mat-icon [svgIcon]="'custom:' + info().icon"></mat-icon>
+  } @else {
+    {{ info().name }}
+  }
+
+</a>

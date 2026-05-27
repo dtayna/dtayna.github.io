@@ -1,0 +1,21 @@
+@use 'sass:color';
+
+$primary-color: white;
+$primay-color-hover: color.scale($primary-color, $lightness: -3%);
+$secondary-color: rgb(127, 0, 178);
+$third-color: rgb(255, 255, 86);
+
+$dark-block-bg: #101010;
+$dark-block-color: #d3d3d3;
+$dark-block-secondary-color: rgb(207, 155, 228);
+$dark-block-bg-hover: color.scale($dark-block-bg, $lightness: 2%);
+$dark-block-bg-hover-2: color.scale($dark-block-bg, $lightness: 5%);
+
+$progress-color : rgb(123, 46, 154);
+
+$font-size: 16px;
+
+$nav-height: 8vh;
+$header-height: 70vh;
+
+$box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);

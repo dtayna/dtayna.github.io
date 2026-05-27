@@ -1,0 +1,33 @@
+@use '../../../styles/variables.scss' as *;
+
+.container {
+    height: $header-height;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+        font-size: 2em;
+        margin: 0;
+        
+        span {
+            color: $secondary-color;
+        }
+    }
+
+    h2 {
+        font-size: 1.1em;
+        max-width: 30%;
+        font-weight: lighter;
+    }
+
+    img {
+        border-radius: 50%;
+        height: 18vh;
+        margin-bottom: 1%;
+    }
+
+}

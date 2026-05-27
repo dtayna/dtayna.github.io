@@ -1,0 +1,21 @@
+@use '../../../styles/variables.scss' as *;
+
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    height: $nav-height;
+
+    padding-right: 10%;
+  
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    justify-content: end;
+    background: white;
+    box-shadow: $box-shadow;
+}
