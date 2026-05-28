@@ -1,0 +1,54 @@
+@use '../../../styles/variables.scss' as *;
+
+$width : 70%;
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    background-color: $primary-color;
+    ;
+    padding-top: $nav-height;
+
+    h2 {
+        font-size: 1.5em;
+        max-width: 50%;
+        margin-bottom: 5%;
+    }
+
+}
+
+.row {
+    margin-top: 3vh;
+    width: $width;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 3vw;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+    margin-bottom: 5%;
+
+    mat-icon {
+        width: 40px;
+        height: 40px;
+      
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    
+    li {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        list-style-type: none;
+    }
+
+
+}

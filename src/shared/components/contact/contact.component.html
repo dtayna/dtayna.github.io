@@ -1,0 +1,13 @@
+<section id="contact" class="container">
+   <h2> Contact </h2>
+   <div class="row">
+    @for (contact of contacts; track $index) {
+        <a [href]="contact.link" target="_blank" rel="noopener noreferrer">
+            <div class="contact">
+            <mat-icon [svgIcon]="'custom:' + contact.icon"></mat-icon>
+            <span class="label">{{ contact.label }}</span>
+            </div>
+        </a>
+    }
+   </div>
+</section>

@@ -12,9 +12,10 @@ import { MenuItemComponent } from './menu-item/menu-item.component';
 export class NavComponent {
   navItems : MenuItem[] = [
     { name: 'About Me', sectionId: 'about'},
-    { name: 'Tech Stack', sectionId: ''},
-    { name: 'Projects', sectionId: ''},
-    { name: 'Contact',  sectionId: ''},
+    { name: 'Tech Stack', sectionId: 'techstack'},
+    { name: 'Projects', sectionId: 'projects'},
+    { name: 'Contact',  sectionId: 'contact'},
+    { name: 'Itch.io', icon: 'itchio', url: 'https://dtayna.itch.io/'},
     { name: 'GitHub', icon: 'github', url: 'https://github.com/dtayna/'},
   ];
 }

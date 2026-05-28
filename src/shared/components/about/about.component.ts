@@ -50,14 +50,15 @@ export class AboutComponent {
       institution: 'UFRN',
       progress: 90,
       startYear: 2024,
-      endYear: 'Present'
+      endYear: 'Present',
     },
     {
       title: 'B.Sc. in Information Technology',
       institution: 'UFRN',
       progress: 100,
       startYear: 2019,
-      endYear: 2023
+      endYear: 2023,
+      hounors: true
     },{
       title: 'IT Technician',
       institution: 'IFRN',

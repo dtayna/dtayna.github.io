@@ -1,0 +1,17 @@
+<section id="techstack" class="container">
+    <h2> Tech Stack </h2>
+    <div class="row">
+     @for (icon of techIcons; track $index) {
+             <mat-icon class="icon" [svgIcon]="'custom:' + icon"></mat-icon>
+     }
+    </div>
+    <div class="row">
+        <div> <h3> Languages </h3>
+            <ul>
+                @for (lang of languages; track $index) {
+                        <li>{{lang}}</li>
+                }
+            </ul>
+    </div>
+    </div>
+ </section>
