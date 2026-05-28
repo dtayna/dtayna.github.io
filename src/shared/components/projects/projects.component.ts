@@ -21,7 +21,7 @@ export class ProjectsComponent {
     },
     {
       title: 'Game Development Projects',
-      link: 'https://dayna.itch.io',
+      link: 'https://dtayna.itch.io',
       linkLabel: 'View my games on itch.io',
       image: 'assets/images/itchio.png',
       description:
