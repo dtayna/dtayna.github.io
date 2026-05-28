@@ -38,9 +38,10 @@ $width : 84%;
     margin-top: 3vh;
     width: $width;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: start;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10%;
     padding-top: 1vh;
     margin-bottom: 5%;
 
@@ -48,6 +49,7 @@ $width : 84%;
 
     .experiences{
         width: 45%;
+        min-width: 270px;
         display: flex;
         flex-direction: column;
         gap: 1vh;
@@ -55,6 +57,7 @@ $width : 84%;
 
     .education{
         width: 45%;
+        min-width: 270px;
         display: flex;
         flex-direction: column;
         gap: 2vh;

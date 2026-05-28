@@ -1,5 +1,11 @@
-<nav class='container'>
-    @for (item of navItems; track $index)  {
-        <app-menu-item [info]='item'></app-menu-item>
-    }
+<nav class="container">
+    <button class="menu-button" (click)="menuOpen = !menuOpen">
+      <mat-icon>{{ menuOpen ? 'close' : 'menu' }}</mat-icon>
+    </button>
+  
+    <div class="menu" [class.open]="menuOpen">
+      @for (item of navItems; track $index) {
+        <app-menu-item [info]="item"></app-menu-item>
+      }
+    </div>
 </nav>

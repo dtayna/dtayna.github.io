@@ -1,15 +1,18 @@
 import { Component } from '@angular/core';
 import { MenuItem } from '../../models/menu-item.model';
 import { MenuItemComponent } from './menu-item/menu-item.component';
+import { MatIcon } from "@angular/material/icon";
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [MenuItemComponent],
+  imports: [MenuItemComponent, MatIcon],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.scss'
 })
 export class NavComponent {
+  menuOpen = false;
+
   navItems : MenuItem[] = [
     { name: 'About Me', sectionId: 'about'},
     { name: 'Tech Stack', sectionId: 'techstack'},

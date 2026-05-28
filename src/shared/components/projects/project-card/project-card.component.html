@@ -1,0 +1,20 @@
+<div class="project-card">
+    <img
+      class="project-image"
+      [src]="info().image"
+      [alt]="info().title"
+    />
+  
+    <h3>{{ info().title }}</h3>
+  
+    <a
+      class="project-link"
+      [href]="info().link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {{ info().linkLabel }}
+    </a>
+  
+    <p>{{ info().description }}</p>
+</div>

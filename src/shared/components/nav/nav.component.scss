@@ -10,7 +10,7 @@
     box-sizing: border-box;
     height: $nav-height;
 
-    padding-right: 10%;
+    padding-right: 0%;
   
     display: flex;
     flex-direction: row;
@@ -19,3 +19,46 @@
     background: white;
     box-shadow: $box-shadow;
 }
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .menu-button {
+    display: none;
+  
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+@media (max-width: 768px) {
+
+    .menu-button {
+      display: block;
+    }
+  
+    .menu {
+      position: absolute;
+      top: 100%;
+      right: 0;
+  
+      width: 220px;
+  
+      background: white;
+      box-shadow: $box-shadow;
+  
+      padding: 1rem;
+  
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu.open {
+      display: flex;
+    }
+  }

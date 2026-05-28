@@ -1,0 +1,38 @@
+@use '../../../styles/variables.scss' as *;
+
+$width : 84%;
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    background-color: $dark-block-bg;
+    color: $dark-block-color;
+    padding-top: $nav-height;
+    padding-bottom: $nav-height;
+
+    h2 {
+        font-size: 1.5em;
+        max-width: 50%;
+        ;
+    }
+
+    p{
+        text-align: center;
+        width: $width;
+    }
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-top: 2em;
+}

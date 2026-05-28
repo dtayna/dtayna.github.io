@@ -1,0 +1,15 @@
+<section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="row">
+        <p> Professional Projects</p>
+        @for (project of professionalProjects; track $index)  {
+            <app-project-card [info]='project'></app-project-card>
+        }
+    </div>
+    <div class="row">
+        <p> ...and some Personal Projects :) </p>
+        @for (project of personalProjects; track $index)  {
+            <app-project-card [info]='project'></app-project-card>
+        }
+    </div>
+</section>
