@@ -27,57 +27,64 @@ export class TechstackComponent implements OnInit {
     'godot'
   ]
 
-  languages : string[] = [
-    'JavaScript',
-    'TypeScript',
-    'Java',
-    'Python',
-    'Haskell' 
-  ]
+  groups = {
+    languages : [
+      'JavaScript',
+      'TypeScript',
+      'Java',
+      'Python',
+      'Haskell' 
+    ],
+    backend : [
+      'FastAPI',
+      'SQLAlchemy',
+      'PostgreSQL',
+      'Docker',
+      'Pytest',
+      'Node.js' 
+    ],
+    frontend : [
+      'HTML5',
+      'CSS3',
+      'Angular',
+      'Bootstrap',
+      'Tailwind CSS',
+      'Sass',
+      'React' 
+    ],
+    gameDev : [
+      'Godot Engine',
+      'GDScript',
+      'Procreate',
+      'Blender',
+    ],
+    machineLearning : [
+      'Python',
+      'Pandas',
+      'Langchain',
+      'Numpy',
+      'Mathplotlib'
+    ],
+    others : [
+      'Linux',
+      'Git',
+      'Jira',
+      'JUnit',
+      'Android Studio'
+    ]
 
-  backend : string[] = [
-    'FastAPI',
-    'SQLAlchemy',
-    'PostgreSQL',
-    'Docker',
-    'Pytest',
-    'Node.js' 
-  ]
+  }
 
-  frontend : string[] = [
-    'HTML5',
-    'CSS3',
-    'Angular',
-    'Bootstrap',
-    'Tailwind CSS',
-    'Sass',
-    'React' 
-  ]
+  groupTitles: Record<string, string> = {
+    languages: 'Languages',
+    backend: 'Backend',
+    frontend: 'Frontend',
+    gameDev: 'Game Development',
+    machineLearning: 'Machine Learning',
+    others: 'Others'
+  };
 
-  gameDev : string[] = [
-    'Godot Engine',
-    'GDScript'
-  ]
-
-  machineLearning : string[] = [
-    'Python',
-    'Pandas',
-    'Langchain',
-    'Numpy',
-    'Mathplotlib'
-  ]
-
-  others : string[] = [
-    'Linux',
-    'Git',
-    'Jira',
-    'JUnit',
-    'Android Studio'
-  ]
-    
-  
-
-
+  groupsIterable = Object.entries(this.groups);
 
   ngOnInit(): void {
     this.techIcons.forEach(techIcon => {
