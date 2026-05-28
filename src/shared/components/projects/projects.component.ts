@@ -22,7 +22,7 @@ export class ProjectsComponent {
     {
       title: 'Game Development Projects',
       link: 'https://dtayna.itch.io',
-      linkLabel: 'View my games on itch.io',
+      linkLabel: 'Play my games on itch.io',
       image: 'assets/images/itchio.png',
       description:
         'Collection of game development projects created with Godot.'
