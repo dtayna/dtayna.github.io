@@ -4,10 +4,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 95%;
     padding: 1vh 2vh;
     border-radius: 10px;
     background-color: $dark-block-bg-hover;
+    gap: 5%;
 
     .title{
         flex: 1;
@@ -26,4 +28,10 @@
         padding: 1em;
         border-radius: 10px;
     }
+}
+
+img {
+    width: 4em;
+    height: 4em;
+    border-radius: 10px;
 }

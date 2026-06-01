@@ -13,32 +13,44 @@ import { EducationComponent } from './education/education.component';
 export class AboutComponent {
   experiences : Experience[] = [
     {
+      title: 'Entry-Level Test Engineer',
+      company: 'IMD/Asus Brasil',
+      companyIcon: 'assets/companys/imd.jpeg',
+      startYear: 2026,
+      endYear: 'Present'
+    },
+    {
       title: 'Front-End Developer',
       company: 'JFRN/UFRN',
+      companyIcon: 'assets/companys/jfrn.jpeg',
       startYear: 2024,
       endYear: 2026
     },
     {
       title: 'Web Development Intern',
       company: 'SEEC',
+      companyIcon: 'assets/companys/seec.png',
       startYear: 2023,
       endYear: 2023
     },
     {
       title: 'Technical Support Intern',
       company: 'SEEC',
+      companyIcon: 'assets/companys/seec.png',
       startYear: 2021,
       endYear: 2022
     },
     {
       title: 'Teaching Assistant for Mathematical Foundations of Computer Science',
       company: 'UFRN',
+      companyIcon: 'assets/companys/ufrn.png',
       startYear: 2020,
       endYear: 2023
     },
     {
       title: 'Technical Support Intern',
       company: 'ESIG',
+      companyIcon: 'assets/companys/esig.png',
       startYear: 2019,
       endYear: 2021
     }
