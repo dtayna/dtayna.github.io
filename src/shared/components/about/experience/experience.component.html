@@ -1,4 +1,4 @@
-<div class="container">
+<div (click)="onCardClick()" class="main-container" [class.pointer]="info().description">
     <img src={{info().companyIcon}} alt={{ info().company }}>
     <p class="title">
         <b>{{info().title}}</b>
@@ -8,5 +8,16 @@
     <p class="time">
         {{ info().startYear }} – {{ info().endYear }}
     </p>
+    
 </div>
+@if (descriptionCollapse() && info().description) {
+    <div class="description-container">
+        <p> Main Responsibilities </p>
+        <ul>
+            @for (item of info().description; track $index) {
+                <li> {{ item }} </li>
+            }
+        </ul>
+    </div>
+}
 

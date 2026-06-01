@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, signal, output, effect } from '@angular/core';
 import { Experience } from '../../../models/experience.model';
 
 @Component({
@@ -10,4 +10,10 @@ import { Experience } from '../../../models/experience.model';
 })
 export class ExperienceComponent {
   info = input.required<Experience>();
+
+  descriptionCollapse = signal(false);
+
+  onCardClick(){
+    this.descriptionCollapse.set(!this.descriptionCollapse());
+  }
 }
