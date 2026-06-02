@@ -4,5 +4,5 @@ export interface Education {
     progress: number;
     startYear?: number;
     endYear?: number | 'Present';
-    hounors?: boolean;
+    honors?: boolean;
   }
