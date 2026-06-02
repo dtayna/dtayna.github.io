@@ -2,6 +2,8 @@ import { Component, inject } from '@angular/core';
 import { MatIconRegistry, MatIconModule } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Contact } from '../../models/contact.model';
+import contactData from '../../mocks/contacts.json';
+
 @Component({
   selector: 'app-contact',
   standalone: true,
@@ -13,27 +15,7 @@ export class ContactComponent {
   private iconRegistry = inject(MatIconRegistry);
   private sanitizer = inject(DomSanitizer);
 
-  contacts : Contact[] = [
-    {
-      label: 'dtayna',
-      icon: 'github',
-      link: 'https://github.com/dtayna'
-    },
-    {
-      label: 'dtayna',
-      icon: 'telegram',
-    },
-    {
-      label: 'Débora Tayná',
-      icon: 'linkedin',
-      link: 'https://br.linkedin.com/in/d%C3%A9bora-tayn%C3%A1-98733a213'
-    },
-    {
-      label: 'dtayna.3194@gmail.com',
-      icon: 'email',
-      link: 'mailto:dtayna.3194@gmail.com'
-    }
-  ];
+  contacts : Contact[] = contactData.contacts;
 
   ngOnInit(): void {
     this.contacts.forEach(contact => {

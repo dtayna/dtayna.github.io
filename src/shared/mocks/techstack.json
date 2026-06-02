@@ -1,0 +1,66 @@
+{
+    "techGroups": {
+      "languages": {
+        "title": "Languages",
+        "items": [
+          "JavaScript",
+          "TypeScript",
+          "Java",
+          "Python",
+          "Haskell"
+        ]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": [
+          "FastAPI",
+          "SQLAlchemy",
+          "PostgreSQL",
+          "Docker",
+          "Pytest",
+          "Node.js"
+        ]
+      },
+      "frontend": {
+        "title": "Frontend",
+        "items": [
+          "HTML5",
+          "CSS3",
+          "Angular",
+          "Bootstrap",
+          "Tailwind CSS",
+          "Sass",
+          "React"
+        ]
+      },
+      "gameDev": {
+        "title": "Game Development",
+        "items": [
+          "Godot Engine",
+          "GDScript",
+          "Procreate",
+          "Blender"
+        ]
+      },
+      "machineLearning": {
+        "title": "Machine Learning",
+        "items": [
+          "Python",
+          "Pandas",
+          "Langchain",
+          "Numpy",
+          "Matplotlib"
+        ]
+      },
+      "others": {
+        "title": "Others",
+        "items": [
+          "Linux",
+          "Git",
+          "Jira",
+          "JUnit",
+          "Android Studio"
+        ]
+      }
+    }
+  }

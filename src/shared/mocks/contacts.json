@@ -1,0 +1,23 @@
+{
+    "contacts": [
+      {
+        "label": "dtayna",
+        "icon": "github",
+        "link": "https://github.com/dtayna"
+      },
+      {
+        "label": "dtayna",
+        "icon": "telegram"
+      },
+      {
+        "label": "Débora Tayná",
+        "icon": "linkedin",
+        "link": "https://br.linkedin.com/in/d%C3%A9bora-tayn%C3%A1-98733a213"
+      },
+      {
+        "label": "dtayna.3194@gmail.com",
+        "icon": "email",
+        "link": "mailto:dtayna.3194@gmail.com"
+      }
+    ]
+  }
