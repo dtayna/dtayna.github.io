@@ -1,7 +1,7 @@
 {
     "experiences": [
       {
-        "title": "Full-stack developer",
+        "title": "Full-stack Developer",
         "company": "SimpleWay",
         "companyIcon": "assets/companys/simpleway.png",
         "startYear": 2026,
@@ -11,6 +11,13 @@
         "title": "Entry-Level Test Engineer",
         "company": "IMD/Asus Brasil",
         "companyIcon": "assets/companys/imd.jpeg",
+        "description": [
+          "Structured the test automation architecture for web applications using Playwright.",
+          "Developed end-to-end automated tests using Playwright and JavaScript, following Page Object Model and reusable testing practices.",
+          "Performed exploratory and functional manual testing to identify defects, edge cases, and inconsistencies in application behavior.",
+          "Validated implemented features against Figma designs, verifying functionality, user flows, and visual consistency.",
+          "Monitored and managed testing activities throughout the development workflow using Jira."
+        ],
         "startYear": 2026,
         "endYear": 2026
       },
