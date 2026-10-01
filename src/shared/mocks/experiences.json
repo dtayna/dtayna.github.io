@@ -1,11 +1,18 @@
 {
     "experiences": [
       {
+        "title": "Full-stack developer",
+        "company": "SimpleWay",
+        "companyIcon": "assets/companys/simpleway.png",
+        "startYear": 2026,
+        "endYear": "Present"
+      },
+      {
         "title": "Entry-Level Test Engineer",
         "company": "IMD/Asus Brasil",
         "companyIcon": "assets/companys/imd.jpeg",
         "startYear": 2026,
-        "endYear": "Present"
+        "endYear": 2026
       },
       {
         "title": "Front-End Developer",
